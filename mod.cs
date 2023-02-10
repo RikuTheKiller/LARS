@@ -15,6 +15,11 @@ namespace Mod
 
     public static class ModUtils
     {
+
+    }
+
+    public class LimbAttachmentWireTool : DistanceWireTool
+    {
         
     }
 }
