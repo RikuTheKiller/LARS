@@ -9,7 +9,7 @@ namespace Mod
 
         public static void Main()
         {
-            //Test
+            
         }
     }
 
@@ -20,6 +20,9 @@ namespace Mod
 
     public class LimbAttachmentWireTool : DistanceWireTool
     {
-        
+        protected override void OnJointCreate(DistanceJoint2D joint)
+        {
+
+        }
     }
 }
