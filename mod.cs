@@ -22,7 +22,12 @@ namespace Mod
     {
         protected override void OnJointCreate(DistanceJoint2D joint)
         {
-
+            
         }
+    }
+
+    public class LimbAttachmentWireBehaviour : DistanceJointWireBehaviour
+    {
+
     }
 }
