@@ -9,7 +9,7 @@ namespace Mod
 
         public static void Main()
         {
-
+            Console.Out("Hello World");
         }
     }
 
