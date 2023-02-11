@@ -33,6 +33,8 @@ namespace Mod
         LimbBehaviour connectedLimb;
         CirculationBehaviour circulation;
         CirculationBehaviour connectedCirculation;
+        ConnectedNodeBehaviour nodeBehaviour;
+        ConnectedNodeBehaviour connectedNodeBehaviour;
 
         protected override void Created()
         {
@@ -41,8 +43,11 @@ namespace Mod
             limb = gameObject.GetComponent<LimbBehaviour>();
             connectedLimb = joint.connectedBody.GetComponent<LimbBehaviour>();
             circulation = gameObject.GetComponent<CirculationBehaviour>();
-            connectedCirculation = gameObject.GetComponent<CirculationBehaviour>();
-            if (!joint || !limb || !connectedLimb || !circulation || !connectedCirculation)
+            connectedCirculation = joint.connectedBody.GetComponent<CirculationBehaviour>();
+            nodeBehaviour = gameObject.GetComponent<ConnectedNodeBehaviour>();
+            connectedNodeBehaviour = joint.connectedBody.GetComponent<ConnectedNodeBehaviour>();
+            
+            if (!joint || !limb || !connectedLimb || !circulation || !connectedCirculation || !nodeBehaviour || !connectedNodeBehaviour)
             {
                 Destroy(this);
                 return;
