@@ -11,7 +11,8 @@
     "Fun"
   ],
   "Scripts": [
-    "mod.cs"
+    "mod.cs",
+    "tools.cs"
   ],
   "Active": true,
   "UGCIdentity": null,
